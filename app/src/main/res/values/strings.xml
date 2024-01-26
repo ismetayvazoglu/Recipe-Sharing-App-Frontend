@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">reciπ</string>
+    <string name="wlcm_msg">Welcome to reciπ</string>
+    <string name="choose_msg">What do you want to do today?</string>
+    <string name="create_btn">Create a new recipe of your taste</string>
+    <string name="find_btn">FInd a recipe for your taste</string>
+
+    <string name="type_crt">Type of your recipe:</string>
+    <string name="ntrtn_crt">Nutrition values of your recipe:</string>
+
+    <string-array name="spinner_items">
+        <item>Main Course</item>
+        <item>Entree Starter</item>
+        <item>Soup</item>
+        <item>Salad</item>
+        <item>Dessert</item>
+    </string-array>
+
+    <string-array name="spinner_kcal">
+        <item>200</item>
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1000</item>
+    </string-array>
+
+    <string name="refresh_icon_description">this is refresh icon description</string>
+
+    <string name="search_icon_description">this is search icon description</string>
+
+</resources>
