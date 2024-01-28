@@ -20,15 +20,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 
-//192.168.56.1
+
 public class RecipiRepository {
     public void getAllRecipe(ExecutorService srv, Handler uiHandler) {
         srv.submit(() -> {
 
             try {
                 List<Recipe> data = new ArrayList<>();
-
-                URL url = new URL("http://192.168.56.1:8080/recipi/recipes");
+                //replace <IPv4> with your IPv4 adrress
+                URL url = new URL("http://<IPv4>:8080/recipi/recipes");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                 BufferedReader reader = new BufferedReader(
@@ -74,8 +74,8 @@ public class RecipiRepository {
 
         srv.execute(() -> {
             try {
-
-                URL url = new URL("http://192.168.56.1:8080/recipi/recipes/" + id + "/details");
+                //replace <IPv4> with your IPv4 adrress
+                URL url = new URL("http://<IPv4>:8080/recipi/recipes/" + id + "/details");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                 BufferedReader reader = new BufferedReader(
@@ -129,8 +129,8 @@ public class RecipiRepository {
         srv.execute(() -> {
 
             try {
-
-                URL url = new URL("http://192.168.56.1:8080/recipi/addrecipe");
+                //replace <IPv4> with your IPv4 adrress
+                URL url = new URL("http://<IPv4>:8080/recipi/addrecipe");
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
@@ -202,8 +202,8 @@ public class RecipiRepository {
 
             try {
                 List<Review> data = new ArrayList<>();
-
-                URL url = new URL("http://192.168.56.1:8080/recipi/recipes/" + id + "/details/reviews");
+                //replace <IPv4> with your IPv4 adrress
+                URL url = new URL("http://<IPv4>:8080/recipi/recipes/" + id + "/details/reviews");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                 BufferedReader reader = new BufferedReader(
@@ -249,8 +249,8 @@ public class RecipiRepository {
         srv.execute(() -> {
 
             try {
-
-                URL url = new URL("http://192.168.56.1:8080/recipi/recipes/" + id + "/details/reviews/addreview");
+                //replace <IPv4> with your IPv4 adrress
+                URL url = new URL("http://<IPv4>:8080/recipi/recipes/" + id + "/details/reviews/addreview");
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
@@ -309,8 +309,8 @@ public class RecipiRepository {
 
             try {
                 List<Recipe> data = new ArrayList<>();
-
-                URL url = new URL("http://192.168.56.1:8080/recipi/recipes/type/" + type);
+                //replace <IPv4> with your IPv4 adrress
+                URL url = new URL("http://<IPv4>:8080/recipi/recipes/type/" + type);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                 BufferedReader reader = new BufferedReader(
@@ -357,8 +357,8 @@ public class RecipiRepository {
 
             try {
                 List<Recipe> data = new ArrayList<>();
-
-                URL url = new URL("http://192.168.56.1:8080/recipi/recipes/kcal/" + kcal);
+                //replace <IPv4> with your IPv4 adrress
+                URL url = new URL("http://<IPv4>:8080/recipi/recipes/kcal/" + kcal);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                 BufferedReader reader = new BufferedReader(
@@ -405,8 +405,8 @@ public class RecipiRepository {
 
             try {
                 List<Recipe> data = new ArrayList<>();
-
-                URL url = new URL("http://192.168.56.1:8080/recipi/recipes/" + input);
+                //replace <IPv4> with your IPv4 adrress
+                URL url = new URL("http://<IPv4>:8080/recipi/recipes/" + input);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                 BufferedReader reader = new BufferedReader(
